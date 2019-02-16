@@ -42,6 +42,8 @@ test_script:
   - ps: (Get-ComputerInfo -Property OsName,OsVersion,OsArchitecture | Format-Table -HideTableHeaders -AutoSize | Out-String).Trim()
   - node --version
   - npm --version
+  - ps: Add-AppveyorMessage "Print variables"
+  - node print.js
   - ps: Add-AppveyorMessage "Making docs..."
   - npm start docs
   - ps: Add-AppveyorMessage "Done"
