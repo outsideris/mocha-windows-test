@@ -30,6 +30,9 @@ install:
 ## Build configuration
 platform:
   - x64
+build: script
+build_script:
+  - ps: Add-AppveyorMessage "Verify Growl responding..."
 
 ## Test configuration
 before_test:
