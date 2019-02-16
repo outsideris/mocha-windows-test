@@ -43,6 +43,6 @@ test_script:
   - node --version
   - npm --version
   - ps: Add-AppveyorMessage "Making docs..."
-  - npm start docsk
+  - npm start docs
   - ps: Add-AppveyorMessage "Done"
 
